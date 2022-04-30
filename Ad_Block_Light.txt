@@ -1,0 +1,58 @@
+﻿[adguard]
+! Title:広告ブロックルール
+! Version: 1.3
+! Homepage:
+! Last modified: 2019/06/06
+! Expires: 1 days
+!フィルタ方針_不要な広告をブロック最小限
+!-----------------------------------
+
+||ads.yahoo.com/pixel?*
+||analytics.twitter.com
+||fout.jp^
+||112.2o7.net
+||mediad2.jp^
+||adcdn.goo.ne.jp^
+||google-analytics.com/analytics.js
+||microad.jp^$third-party
+||microad.net^$third-party
+/pagead2.
+##.adsbygoogle
+##.ads-ad
+|http:*^ad.
+||google-analytics.com/ga.js
+||doubleclick.net^
+||0914.global.ssl.fastly.net/ad2/img/x.gif
+||adservice.google.com/adsid/integrator.js
+||googletagmanager.com/gtm.js
+||openx.net^
+||impact-ad.com^
+||impact-ad.jp^
+||beacon.watch.impress.co.jp^
+||nakanohito.jp^
+||px.moatads.com/pixel.gif
+||adsensecustomsearchads.com/afs/ads?*
+cloudfront.net/ads-search32.html|
+||beacon.krxd.net/usermatch.gif
+!|https://images-fe.ssl-images-amazon.com/images/*.html
+!||amazon-adsystem.com^$third-party
+!---------------------youtube.com
+||youtube.com/pagead/
+-pagead-id.
+||googleadservices.com^
+/pagead/lvz?
+##.ytp-ad-progress-list
+###player-ads
+
+!-------------------------yahoo.co.jp
+||yimg.*/bdv/
+||yads.c.yimg.jp/js/yads.js
+/yads-
+||s.yimg.jp/images/clear.gif
+||ads.yahoo.com/pixel?*
+!------fc2
+||media.fc2.com/counter_img.php
+web.fc2.com###fc2_bottom_bnr
+web.fc2.com###fc2_ad_box
+
+
