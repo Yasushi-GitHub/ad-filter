@@ -3,7 +3,7 @@
 ! Version: 22.04020
 ! Homepage: archive.capture.jp
 ! Description: AdGuard
-! Last modified: 2022 04 02
+! Last modified: 2022 05 04
 ! Expires: 1 hours
 !フィルタ方針_不要なCookie無効化_AD無効化
 !-----------------------------------
@@ -88,31 +88,10 @@
 !--------ポイントサイト向け広告ホワイトリストstealth
 @@||amazon.co.jp^$stealth,app=waterfox.exe
 @@||macromill.com^$stealth
-@@||infoq.jp^$stealth
-@@||research-panel.jp^$stealth
 @@||cue-monitor.jp^$stealth
 @@||research.nttcoms.com^$stealth
-@@||fast-ask.com^$stealth
 @@||member.insight.rakuten.co.jp^$stealth
-@@||cyberpanel.jp^$stealth
 @@||myvoice.co.jp^$stealth
-@@||ann-kate.jp^$stealth
-@@||nikkei-r.co.jp^$stealth
-@@||pex.jp^$stealth
-@@||ecnavi.jp^$stealth
-@@||dietnavi.com^$stealth
-@@||hapitas.jp^$stealth
-@@||rakuten.co.jp^$stealth
-@@||rakuten-bank.co.jp^$stealth
-@@||rrakuten-sec.co.jp^$stealth
-@@||gpoint.co.jp^$stealth
-@@||potora.jp^$stealth
-@@||club.panasonic.jp^$stealth
-@@||bitcoin.dmm.com^$stealth
-@@||pointi.jp^$stealth
-@@||chobirich.com^$stealth
-@@||rsch.jp^$stealth
-@@||infopanel.jp^$stealth
 @@||ad.atown.jp/adserver$other,image,important
 @@||ad-track.jp$other,image,important
 
@@ -123,9 +102,6 @@
 !--------
 @@||analytics.twitter.com^$domain=analytics.twitter.com,important
 !--------
-@@||valuecommerce.ne.jp^$stealth
-@@||jcb-card.jp^$stealth
-@@||jcb.co.jp^$stealth
 !--------
 !--------app
 ||syndication.twitter.com^$app=waterfox.exe,important
@@ -180,7 +156,6 @@
 ||steampowered.com/default/usabilitytracking/
 ||x9.shinobi.jp^
 ||sync.shinobi.jp^
-||e01.taggyad.jp/js/ext/gtdl.js
 ||taggyad.jp^
 ||id.smt.docomo.ne.jp/js/beacon.js
 !--------アフィリエイト
@@ -192,7 +167,6 @@
 ||omt.shinobi.jp/b^
 ||rcm.shinobi.jp/js^
 ||weknow.vis1.shinobi.jp/js^
-||bar1.shinobi.jp/s^
 ||bar1.shinobi.jp^
 ||rcm.shinobi.jp/pv^
 !--------
@@ -200,7 +174,6 @@ info.finance.yahoo.co.jp###pos-lrec
 !--------
 !--------広告 正確なアドレスでブロック
 ||tracking.game8.jp^
-||google-analytics.com/analytics.js
 ||yads.c.yimg.jp/js/yads.js
 ||p.typekit.net/p.gif?*
 ||pixel.wp.com/g.gif?*
@@ -262,7 +235,6 @@ wp-content/plugins/lazy-load/images/1x1.trans.gif|
 ||dmm.com/analytics/v
 ||inoreader.com/adv/www/delivery/lg.php?bannerid=
 ||i-mobile.co.jp^
-||i-mobile.co.jp/api/ad_native.ashx
 !--------
 !--------広告ドメイン名でブロック
 !||zucks.net^
@@ -371,7 +343,6 @@ hatena.com/js/bookmark_button.js|
 ||b92.yahoo.co.jp/search/?*
 ||b97.yahoo.co.jp/pagead/conversion_async.js
 ||b97.yahoo.co.jp/pagead/conversion/
-||b97.yahoo.co.jp/pagead/conversion/*
 ||ba.afl.rakuten.co.jp^
 ||banner.eisys-bcs.jp/js/bcs.min.js
 ||ybx.yahoo.co.jp/clear.gif
@@ -382,7 +353,6 @@ hatena.com/js/bookmark_button.js|
 ||s.yimg.jp/images/advertising/common/js/iicon.min.js
 ||s.yimg.jp/images/clear.gif
 ||s.yimg.jp/images/evt/common/share/fb_btn.png
-||s.yimg.jp/images/listing/tool/yads/yads-iframe.html
 ||s.yimg.jp/images/ycd/lib/ycdloader/3.0.4/ycdproxy.html
 !--------
 !-----------google
@@ -392,15 +362,11 @@ hatena.com/js/bookmark_button.js|
 ||google-analytics.com^$third-party
 ||google.*/gen_204?$~xmlhttprequest
 ||google.*/gen204?
-||google.com/adsense/search/ads.js
 ||google.com/coop/cse/brand
 ||googleads.g.doubleclick.net^
-||googleadservices.com/pagead/aclk
-||googleadservices.com/pagead/conversion.js
 ||googleadservices.com^
 ||googletagmanager.com/gtag/js
 ||googletagmanager.com/gtm.js
-||googletagservices.com/tag/js/gpt.js
 ||googletagservices.com^
 ||google.com/ads/measurement^
 !--------
@@ -411,19 +377,13 @@ hatena.com/js/bookmark_button.js|
 ||platform.twitter.com/widgets/twitter_cookies.html
 ||platform.twitter.com/widgets/widget_iframe*html?namespace
 ||analytics.twitter.com^
-||analytics.twitter.com/i/adsct?^
 !||analytics.twitter.com/i/adsct?p_id=^
-||platform.twitter.com/widgets/widget_iframe*html?namespace=
 ||twitter.com/i/jot
 ||syndication.twitter.com^
 !--------
 !--facebook
 ||connect.facebook.net/en_US^
-||connect.facebook.net/en_US/fbds.js
-||connect.facebook.net/en_US/fbevents.js
-||connect.facebook.net/en_US/sdk.js
 ||connect.facebook.net/ja_JP^
-||connect.facebook.net/ja_JP/sdk.js
 ||connect.facebook.net^*/fbevents.js$third-party
 ||facebook.com*/impression.php
 ||facebook.com*/plugins/like.php?$third-party
@@ -435,7 +395,6 @@ hatena.com/js/bookmark_button.js|
 ||facebook.com/security/hsts-pixel.gif
 ||facebook.com/sem_campaigns/sem_pixel_test
 ||facebook.com/tr/?
-||facebook.com/v2.0/plugins/share_button.php?^
 !||graph.facebook.com/?*
 ||graph.facebook.com^$third-party
 !||facebook.com/rsrc.php*
@@ -502,7 +461,6 @@ jp.inoreader.com###IniTlEfrbPLhVVSu_wrapper
 ||connect.mail.ru/share_count?*
 ||consent.truste.com/notice?*
 ||counter2.blog.livedoor.com/c?*$third-party
-||cse.google.com/coop/cse/brand?
 ||cse.google.com/cse.js?*
 ||curse-d.openx.net/w/1.0/acj?*
 ||data.coremetrics.com/cm?*
@@ -531,7 +489,6 @@ jp.inoreader.com###IniTlEfrbPLhVVSu_wrapper
 ||img.adplan-ds.com^
 ||ing-district.clicktale.net/ctn_v2/auth/?*
 ||inside-games.jp/feature/advertising/
-||inside-games.jp/feature/advertising/viewcount.html
 ||inside-games.jp/pv.php*
 ||itmedia.co.jp/js/sc$domain=itmedia.co.jp
 ||js.ad-stir.com/js/*
@@ -551,7 +508,6 @@ jp.inoreader.com###IniTlEfrbPLhVVSu_wrapper
 ||penta.a.one.impact-ad.jp/psm/1.0/actualizar
 ||pixel.advertising.com/ups/55967/sync
 ||pixel.mathtag.com/event/js
-||pixel.mathtag.com/event/js?*
 ||preferences.truste.com/webservices/js
 ||s.adroll.com/j/roundtrip.js
 ||s5.feedly.com/images/pixel.png
@@ -559,11 +515,6 @@ jp.inoreader.com###IniTlEfrbPLhVVSu_wrapper
 ||secure.quantserve.com/quant.js
 ||sh.adingo.jp/?*
 ||social-plugins.line.me/widget/share?url=
-||spcnv.i-mobile.co.jp/script/adv.js
-||spdmg-backend.i-mobile.co.jp/adv.aspx
-||spdmg.i-mobile.co.jp/script/adSiteVisit.js
-||spdmg.i-mobile.co.jp/script/dgcore.js
-||spnet2-1.i-mobile.co.jp/ajax/ad_native.ashx
 ||static.criteo.net/js/ld/gbc.js
 ||static.criteo.net/js/ld/ld.js
 ||static.criteo.net/js/ld/publishertag.js^
@@ -573,7 +524,6 @@ jp.inoreader.com###IniTlEfrbPLhVVSu_wrapper
 ||static.mixi.jp/js/plugins.js^$third-party
 ||sync.logly.co.jp/sync/sync.js
 ||sync.mathtag.com/sync/img?
-||sync.mathtag.com/sync/img?*
 ||t.adclr.jp
 ||tmscdn.coremetrics.com/tms/50340000/cp-v3.js
 ||tmscdn.coremetrics.com/tms/dispatcher-v3.js
