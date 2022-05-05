@@ -1,7 +1,7 @@
 ! Title:ポイントサイト向け広告ブロック PointSite_Ad_Block-ver2
-! Version: 2022.05.02.1
+! Version: 2022.05.05.1
 ! Homepage:https://raw.githubusercontent.com/Yasushi-GitHub/ad-filter/main/PointSite_Ad_Block.txt
-! Last modified: 20220502
+! Last modified: 20220505
 ! Expires: 1 days
 !フィルタ方針_不要なCookie無効化_AD無効化
 !-----------------------------------
@@ -33,3 +33,14 @@
 ||rossoad.com^
 ||googleads.g.doubleclick.net^
 ||browser.events.data.msn.com^
+||ad.yieldmanager.com/pixel^
+||b92.yahoo.co.jp^
+||btlr.sharethrough.com^
+||ads.servenobid.com^
+||prebid.media.net^
+||public.servenobid.com^
+||l.evidon.com^
+||flux-cdn.com^
+||img.polymorphicads.jp^
+||adntokyo.gunosy.com^
+||anymind360.com^
