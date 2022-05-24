@@ -1,0 +1,11 @@
+[Adblock Plus 2.0]
+! Title:スタイルシートブロックルール
+! Version: 2022.05.24.1
+! Homepage:https://raw.githubusercontent.com/Yasushi-GitHub/ad-filter/main/StyleSheet.txt
+! Last modified: 20220524
+! Expires: 1 days
+!フィルタ方針_不要なスタイル無効化
+
+||amazon.co.jp##div[data-component-type="s-impression-logger"]
+
+
